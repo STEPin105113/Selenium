@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210127 11:40:51.187" rpa="true">
+<suite id="s1" name="SeleniumProject" source="C:\Robot_framework\Robot_workspace\SeleniumProject">
+<suite id="s1-s1" name="Magento Suite" source="C:\Robot_framework\Robot_workspace\SeleniumProject\magento_suite">
+<suite id="s1-s1-s1" name="Login Tests" source="C:\Robot_framework\Robot_workspace\SeleniumProject\magento_suite\login_tests.robot">
+<test id="s1-s1-s1-t1" name="TC3_InvalidCredential">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${OUTPUT_DIR}${/}driver</arg>
+</arguments>
+<status status="PASS" starttime="20210127 11:40:51.733" endtime="20210127 11:40:51.734"></status>
+</kw>
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>path</arg>
+<arg>${OUTPUT_DIR}${/}driver</arg>
+</arguments>
+<msg timestamp="20210127 11:40:51.734" level="INFO">Environment variable 'path' set to value 'C:/Users/CTEA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin/server;C:/Users/CTEA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\python;C:\python\Scripts;C:\xampp\mysql\bin;C:\Program Files\Git\cmd;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Groovy\bin;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Groovy;C:\Program Files (x86)\Groovy\bin;C:\Program Files\Java\jdk1.8.0_271\bin;C:\Users\CTEA\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;;C:\Users\CTEA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\CTEA\AppData\Local\Microsoft\WindowsApps;C:\Users\CTEA\AppData\Roaming\npm;C:\WINDOWS\System32;;C:\Robot_framework\Robot_workspace\SeleniumProject\driver'.</msg>
+<status status="PASS" starttime="20210127 11:40:51.734" endtime="20210127 11:40:51.735"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>url=https://magento.com/</arg>
+<arg>browser=ff</arg>
+</arguments>
+<msg timestamp="20210127 11:40:51.736" level="INFO">Opening browser 'ff' to base url 'https://magento.com/'.</msg>
+<msg timestamp="20210127 11:40:51.780" level="INFO">Firefox driver log is always forced to to: C:\Robot_framework\Robot_workspace\SeleniumProject\geckodriver-151.log</msg>
+<status status="PASS" starttime="20210127 11:40:51.735" endtime="20210127 11:41:19.743"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210127 11:41:19.743" endtime="20210127 11:41:20.018"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=My Account</arg>
+</arguments>
+<msg timestamp="20210127 11:41:20.019" level="INFO">Clicking element 'link=My Account'.</msg>
+<status status="PASS" starttime="20210127 11:41:20.019" endtime="20210127 11:41:30.342"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>balaji0017@gmail.com</arg>
+</arguments>
+<msg timestamp="20210127 11:41:30.345" level="INFO">Typing text 'balaji0017@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210127 11:41:30.342" endtime="20210127 11:41:30.449"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=pass</arg>
+<arg>welcome@12345</arg>
+</arguments>
+<msg timestamp="20210127 11:41:30.451" level="INFO">Typing password into text field 'id=pass'.</msg>
+<msg timestamp="20210127 11:41:30.528" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210127 11:41:30.587" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210127 11:41:30.450" endtime="20210127 11:41:30.587"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>name=send</arg>
+</arguments>
+<msg timestamp="20210127 11:41:30.588" level="INFO">Clicking element 'name=send'.</msg>
+<status status="PASS" starttime="20210127 11:41:30.588" endtime="20210127 11:41:34.390"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>My Account</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210127 11:41:35.074" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2951.png"&gt;&lt;img src="selenium-screenshot-2951.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210127 11:41:34.396" endtime="20210127 11:41:35.075"></status>
+</kw>
+<msg timestamp="20210127 11:41:35.097" level="FAIL">Title should have been 'My Account' but was 'Account Information'.</msg>
+<status status="FAIL" starttime="20210127 11:41:34.390" endtime="20210127 11:41:35.098"></status>
+</kw>
+<status status="FAIL" starttime="20210127 11:40:51.732" endtime="20210127 11:41:35.098" critical="yes">Title should have been 'My Account' but was 'Account Information'.</status>
+</test>
+<status status="FAIL" starttime="20210127 11:40:51.361" endtime="20210127 11:41:35.099"></status>
+</suite>
+<status status="FAIL" starttime="20210127 11:40:51.356" endtime="20210127 11:41:35.103"></status>
+</suite>
+<status status="FAIL" starttime="20210127 11:40:51.272" endtime="20210127 11:41:35.105"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tasks</stat>
+<stat pass="0" fail="1">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="SeleniumProject">SeleniumProject</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Magento Suite">SeleniumProject.Magento Suite</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Login Tests">SeleniumProject.Magento Suite.Login Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

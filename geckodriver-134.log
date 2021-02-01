@@ -1,0 +1,18 @@
+1610689887132	geckodriver	INFO	Listening on 127.0.0.1:60697
+1610689890131	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\CTEA\\AppData\\Local\\Temp\\rust_mozprofile9apJ13"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610689894337	Marionette	INFO	Listening on port 60706
+1610689894416	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610689894470	Marionette	ERROR	[21] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: https://www.static-jcpenney.com/prod4/yoda-site-components/2018.0.18/dll/site_components.client.dll.js, line 1: TypeError: e is undefined
+1610689941586	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript error: https://www.static-jcpenney.com/prod4/yoda-assets/vendor/target.js line 2 > srcScript, line 61: Error: Errors: field - [visitorId] - one or more customer Ids in the request are invalid. Null or empty values are not allowed for customer id, integrationCode or authenticatedState.;
+1610690337436	Marionette	INFO	Stopped listening on port 60706
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
